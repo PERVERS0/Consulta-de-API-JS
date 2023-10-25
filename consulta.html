@@ -3,27 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta</title>
+    <title>QUERY</title>
      <!-- Latest compiled and minified CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Latest compiled JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="query.js" defer ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="consulta.js" defer></script>
 </head>
-<body style="background-color: rgb(105, 105, 105);">
-    <h1 style="text-align: center;">CONSULTA DE API</h1>
-    <table class="table">
+<body>
+    <h1 style="text-align: center;">Listagem</h1>
+    <table class="table table-dark table-striped">
         <thead>
           <tr>
-            <th scope="col">IDs</th>
-            <th scope="col">Nome</th>
-            <th scope="col">Cidade</th>
-            <th scope="col">Apartamento</th>
+            <th scope="col">ID</th>
+            <th scope="col">NOME</th>
+            <th scope="col">CIDADE</th>
+            <th scope="col">APARTAMENTO</th>
           </tr>
         </thead>
-        <tbody class="table-group-divider" id="tabela">
+        <tbody id="table">
          
         </tbody>
       </table>
